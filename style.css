@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./IMAGES/background.png');
+    background-size: cover;
+background-repeat: no-repeat;
+overflow: hidden;
+   	transition:all .5s ease-in-out; 
+   	-o-transition:all .5s ease-in-out; 
+   	-moz-transition:all .5s ease-in-out; 
+   	-webkit-transition:all .5s ease-in-out;
+
+}
+
+.navbar{
+    float: right;
+}
+.navbar a{
+    position: absolute;
+    right: 112px;
+    top: 50px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 0.5rem 1.063rem;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+.navbar a:hover{
+    border-color: #00545d;
+}
+
+.middle small{
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 1.125rem;
+
+}
+.middle h1{
+    color:white;
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    font-size: 3.75rem;
+    font-weight: bolder;
+    z-index: -2;
+ }
+.middle button{
+  outline: none;  
+  border: 2px solid white;
+  border-radius: 1.25rem;
+  background: none;
+  color: white;
+  padding: 0.5rem 1.938rem;
+  cursor: pointer;
+  position: absolute;
+  top: 59%;
+  left: 10%;
+}
+.middle button span{
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.middle button span::before{
+content: "\00bb";
+position: absolute;
+opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+ .middle button:hover span {
+    padding-right: 25px;
+  }
+  
+ .middle button:hover span::before{
+    opacity: 1;
+    right: 0;
+  }
+
+.section{
+    height: 59.375rem;
+    width: 3.125rem;
+    background: linear-gradient(#00545d, #000729);
+    float: right;
+}
+.icons img{
+    width: 1.875rem;
+    position: relative;
+    top: 13.563rem;
+    right: -0.625rem;
+    cursor: pointer;
+
+}
+.menu img{
+    width: 1.875rem;
+    padding:2.125rem 0;
+    position:relative;
+    right: -0.625rem;
+        cursor: pointer;
+
+}
+.info img{
+    width: 1.875rem;
+ position: relative;
+ top: 458px;
+ right: -0.625rem; 
+    cursor: pointer;
+
+}
+.animation img{
+    width:3.125rem;
+    animation: bubbles 7s linear infinite;
+}
+.animation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+@keyframes bubbles {
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
+
+    }
+    50%{
+     
+        opacity: 1;
+    }
+    70%{
+opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+    
+}
+.animation img:nth-child(1){
+    animation-delay: 2s;
+}
+.animation img:nth-child(2){
+    animation-delay: 1s;
+    width: 25px;
+}
+.animation img:nth-child(3){
+    animation-delay: 3s;
+}
+.animation img:nth-child(4){
+    animation-delay: 4s;
+    width: 25px;
+
+}
+.animation img:nth-child(5){
+    animation-delay: 6s;
+}
+.animation img:nth-child(6){
+    animation-delay: 7s;
+    width: 25px;
+
+}
+.animation img:nth-child(7){
+    animation-delay: 5s;
+    width: 25px;
+}
+@media only screen and (max-width: 1600px){
+  
+
+@media only screen and (max-width: 1093px){
+    .section{
+        height: 1000px;
+        width: 30px;
+    }
+    .middle small{
+font: size 10px;;
+    }
+    .middle h1{
+font-size: 32px;
+    }
+    .middle button{
+width: 10px;
+height: auto;
+position: absolute;
+top: 358px;
+font-size: 10px;
+padding: 5px 3px;
+width: 80px;
+
+    }
+    .menu img{
+        position: absolute;
+        top: -26px;
+        right: 5px;
+        /* padding: 1px 1px; */
+        width: 21px;
+    }
+    .icons img{
+position:relative;
+top: 460px;
+right: -1px;
+    }
+    .info img{
+    position:relative;
+    top: 500px;
+    right: -1px;
+    }
+    .navbar a{
+            position: absolute;
+            left: 7px;
+            width: 88px;
+            font-size: 13px;
+            padding: 7px 20px;
+            top: 10px;
+        }
+    }
+
+}
