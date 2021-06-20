@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -41,6 +43,8 @@ overflow: hidden;
     top: 35%;
     left: 10%;
     font-size: 1.125rem;
+        font-family: 'Bitter', serif;
+
 
 }
 .middle h1{
@@ -51,6 +55,8 @@ overflow: hidden;
     font-size: 3.75rem;
     font-weight: bolder;
     z-index: -2;
+        font-family: 'Bitter', serif;
+
  }
 .middle button{
   outline: none;  
